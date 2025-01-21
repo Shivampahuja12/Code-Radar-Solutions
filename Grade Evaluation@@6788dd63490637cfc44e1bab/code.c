@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
     char ch;
+    scanf("%c", &c);
     if (ch == 'A') printf("Excellent");
     if (ch == 'B') printf("Good");
     if (ch == 'C') printf("Average");
