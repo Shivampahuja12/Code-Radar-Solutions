@@ -3,7 +3,7 @@
 int main(){
     int a, b;
     scanf("%d%d", &a, &b);
-    int sq = sqrt(a);
+    float sq = sqrt(a);
     if (sq==b) printf("Yes");
     else printf("No");
     return 0;
