@@ -1,8 +1,7 @@
 #include <stdio.h>
 int main(){
-    int a, b, k;
+    int a, b;
     scanf("%d%d", &a, &b);
-    k = a ^ b;
-    printf("%d", k);
+    printf("%d", a^b);
     return 0;
 }
