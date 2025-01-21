@@ -2,7 +2,6 @@
 int main(){
     int a, b;
     scanf("%d%d", &a, &b);
-    int k = a | b;
-    printf("%d", k);
+    printf("%d", a | b);
     return 0; 
 }
