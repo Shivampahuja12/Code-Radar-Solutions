@@ -6,18 +6,18 @@ int main(){
     scanf("%f%f", &a, &b);
     scanf("%c", &c)
     switch(c){
-        case '+': {
+        case '+': 
             res = (a+b);
-            break;}
-        case '-':{ 
+            break;
+        case '-': 
             res = (a-b);
-            break;}
-        case '*': {
+            break;
+        case '*': 
             res = (a*b);
-            break;}
-        case '/': {
+            break;
+        case '/': 
             res = (a/b);
-            break;}
+            break;
     }
     printf("%f", res);
     return 0;
