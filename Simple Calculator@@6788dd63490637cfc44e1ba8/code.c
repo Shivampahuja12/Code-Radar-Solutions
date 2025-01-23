@@ -20,6 +20,6 @@ int main(){
         default:
             perror("Error");
     }
-    printf("%.0f", res);
+    printf("%.1f", res);
     return 0;
 }
