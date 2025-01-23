@@ -10,6 +10,6 @@ int main(){
         case '*': res = (a*b);
         case '/': res = (a/b);
     }
-    printf("%f", res);
+    printf("%d", res);
     return 0;
 }
