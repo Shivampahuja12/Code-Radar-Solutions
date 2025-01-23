@@ -18,7 +18,7 @@ int main(){
             res = a/b;
             break;
         default:
-            printf("error");
+            printf("Error");
     }
     printf("%.0f", res);
     return 0;
