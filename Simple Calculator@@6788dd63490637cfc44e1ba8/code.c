@@ -5,18 +5,18 @@ int main(){
     float res;
     scanf("%d%d%c", &a, &b, &c);
     switch(c){
-        case '+': 
+        case '+': {
         res = (a+b);
-        break;
-        case '-': 
+        break;}
+        case '-':{ 
         res = (a-b);
-        break;
-        case '*': 
+        break;}
+        case '*': {
         res = (a*b);
-        break;
-        case '/': 
+        break;}
+        case '/': {
         res = (a/b);
-        break;
+        break;}
     }
     printf("%d", res);
     return 0;
