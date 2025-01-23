@@ -18,6 +18,6 @@ int main(){
             res = (a/b);
             break;}
     }
-    printf("%d", res);
+    printf("%f", res);
     return 0;
 }
