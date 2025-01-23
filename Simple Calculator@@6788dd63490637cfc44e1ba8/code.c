@@ -1,10 +1,9 @@
 #include <stdio.h>
 int main(){
-    float a, b;
+    int a, b;
     float res;
     char c;
-    scanf("%f %f", &a, &b);
-    scanf("%c", &c)
+    scanf("%d %d %c", &a, &b, &c);
     switch(c){
         case '+': 
             res = a+b;
@@ -19,6 +18,6 @@ int main(){
             res = a/b;
             break;
     }
-    printf("%f", res);
+    printf("%d", res);
     return 0;
 }
