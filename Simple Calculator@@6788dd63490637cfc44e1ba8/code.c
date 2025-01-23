@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    char c;
     float a, b;
     float res;
+    char c;
     scanf("%f%f", &a, &b);
     scanf("%c", &c)
     switch(c){
