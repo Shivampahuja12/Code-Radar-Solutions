@@ -7,16 +7,16 @@ int main(){
     scanf("%c", &c)
     switch(c){
         case '+': 
-            res = (a+b);
+            res = a+b;
             break;
         case '-': 
-            res = (a-b);
+            res = a-b;
             break;
         case '*': 
-            res = (a*b);
+            res = a*b;
             break;
         case '/': 
-            res = (a/b);
+            res = a/b;
             break;
     }
     printf("%f", res);
