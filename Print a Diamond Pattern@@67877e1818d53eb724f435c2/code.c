@@ -14,7 +14,7 @@ int main(){
         printf("\n");
     }
     for (int i=1, i<n; i++){
-        for (int j=0; j<n*2-1; j++){
+        for (int j=0; j<(n*2)-1; j++){
             if (j>=i && j<=(n-1)*2-i){
                 printf("*");
             }
