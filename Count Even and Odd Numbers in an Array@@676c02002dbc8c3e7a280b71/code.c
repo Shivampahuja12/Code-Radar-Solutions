@@ -6,10 +6,10 @@ int main(){
     for (int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
-    int count(int [], int);
-    printf("%d %d", count(a, n));
+    void count(int [], int);
+    count(a, n);
 }
-int count(int a[], int n){
+void count(int a[], int n){
     int oddCount = 0, evenCount = 0;
     for (int i=0; i<n; i++){
         if (a[i]%2==0) {
@@ -19,5 +19,5 @@ int count(int a[], int n){
             oddCount += 1;
         }
     }
-    return evenCount, oddCount;
+    printf("%d %d", evenCount, oddCount);
 }
