@@ -10,13 +10,13 @@ int main(){
     printf("%d %d", count(a, n));
 }
 int count(int a[], int n){
-    int odd = 0, even = 0;
+    int oddCount = 0, evenCount = 0;
     for (int i=0; i<n; i++){
         if (a[i]%2==0) {
-            even += 1;
+            evenCount += 1;
         }
         else {
-            odd += 1;
+            oddCount += 1;
         }
     }
     return even, odd;
