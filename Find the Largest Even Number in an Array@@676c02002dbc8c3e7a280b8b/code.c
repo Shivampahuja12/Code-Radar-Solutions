@@ -9,7 +9,7 @@ int main(){
     printf("%d",max(a[], n));
     return 0;
 }
-int max(int a[], int n) {
+int max(int a[n], int n) {
     int max = a[0];
     for (int i=1; i<n; i++){
         if (a[i]%2==0){
