@@ -19,5 +19,5 @@ int count(int a[], int n){
             oddCount += 1;
         }
     }
-    return even, odd;
+    return evenCount, oddCount;
 }
