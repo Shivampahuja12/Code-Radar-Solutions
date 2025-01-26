@@ -4,9 +4,9 @@ int main(){
     scanf("%d", &n);
     while (n > 0){
         rem = n%2;
+        n /= 2;
         ans += rem*pow;
         pow *= 10;
-        n /= 2;
     }
     printf("%d", ans);
     return 0;
