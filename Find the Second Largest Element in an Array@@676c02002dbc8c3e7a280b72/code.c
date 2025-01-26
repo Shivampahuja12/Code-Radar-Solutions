@@ -23,6 +23,6 @@ int max(int a[], int n){
             smax = a[i];
         }
     }
-    printf("%d", smax);
-    return 0;
+    if (smax > 0) return smax;
+    else return -1;
 }
