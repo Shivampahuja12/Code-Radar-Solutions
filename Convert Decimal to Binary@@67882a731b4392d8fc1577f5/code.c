@@ -6,7 +6,8 @@ int main(){
         rem = n%2;
         ans += rem*pow;
         pow *= 10;
-        n=10;
+        n /= 10;
     }
+    printf("%d", ans);
     return 0;
 }
