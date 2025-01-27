@@ -3,7 +3,6 @@
 int main(){
     int n;
     scanf("%d", &n);
-    printf("%d", decToBinary(n));
     int rem, ans = 0, pow = 1;
     while (n > 0){
         rem = n%2;
