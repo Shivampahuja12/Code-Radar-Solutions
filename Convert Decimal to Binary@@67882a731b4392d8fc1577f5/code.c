@@ -1,19 +1,16 @@
 #include <stdio.h>
 
-int decToBinary(int n){
+int main(){
+    int n;
+    scanf("%d", &n);
+    printf("%d", decToBinary(n));
     int rem, ans = 0, pow = 1;
     while (n > 0){
         rem = n%2;
         n /= 2;
         ans += rem*pow;
-        pow *= 10;
+        pow *= 2;
     }   
-    return ans;
-}
-
-int main(){
-    int n;
-    scanf("%d", &n);
-    printf("%d", decToBinary(n));
+    printf("%d", ans);
     return 0;
 }
