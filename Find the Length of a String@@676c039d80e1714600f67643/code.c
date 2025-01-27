@@ -3,7 +3,7 @@ int main(){
     int count = 0;
     char s[20];
     scanf("%s", &s);
-    for (int i=s[0]; s[i]<='\0'; i++){
+    for (int i=s[0]; s[i]<'\0'; i++){
         count += 1;
         i++;
     }
