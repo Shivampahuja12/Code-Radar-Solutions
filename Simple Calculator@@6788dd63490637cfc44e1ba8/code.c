@@ -21,5 +21,4 @@ int main(){
             printf("%d", d);
             break;
     }
-    return 0;
 }
