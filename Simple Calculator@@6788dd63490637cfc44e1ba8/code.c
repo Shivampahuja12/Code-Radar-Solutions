@@ -6,18 +6,21 @@ int main(){
     scanf("%f %f %c", &a, &b, &c);
     switch(c){
         case '+': 
-            res = a+b;
+            int ad = a+b;
+            printf("%d", ad);
             break;
         case '-': 
-            res = a-b;
+            int s = a-b;
+            printf("%d", s);
             break;
         case '*': 
-            res = a*b;
+            int m = a*b;
+            printf("%d", m);
             break;
         case '/': 
-            res = a/b;
+            int d = a/b;
+            printf("%d", d);
             break;
     }
-    printf("%d", res);
     return 0;
 }
