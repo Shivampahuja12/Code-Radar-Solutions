@@ -3,7 +3,7 @@
 int main(){
     long int n;
     scanf("%d", &n);
-    int rem, ans = 0, pow = 1;
+    long int ans = 0, pow = 1, rem =0;
     while (n > 0){
         rem = n%2;
         n /= 2;
