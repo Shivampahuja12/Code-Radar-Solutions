@@ -6,19 +6,19 @@ int main(){
     switch(c){
         case '+': 
             int ad = a+b;
-            printf("%d", ad);
+            printf("%.0f", ad);
             break;
         case '-': 
             int s = a-b;
-            printf("%d", s);
+            printf("%.0f", s);
             break;
         case '*': 
             int m = a*b;
-            printf("%d", m);
+            printf("%.0f", m);
             break;
         case '/': 
             int d = a / b;
-            printf("%d", d);
+            printf("%.0f", d);
             break;
     }
 }
