@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int n;
+    long int n;
     scanf("%d", &n);
     int rem, ans = 0, pow = 1;
     while (n > 0){
