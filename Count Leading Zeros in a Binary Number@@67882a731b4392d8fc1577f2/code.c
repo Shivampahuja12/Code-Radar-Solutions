@@ -11,8 +11,5 @@ int main(){
         }
         i++;
     }
-    if (num>40000000) {
-        printf("0");
-    }
     printf("%d", 31-count);
 }
