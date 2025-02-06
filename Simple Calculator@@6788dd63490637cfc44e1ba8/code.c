@@ -5,15 +5,15 @@ int main(){
     scanf("%d %d %c", &a, &b, &c);
     switch(c){
         case '+': 
-            int ad = a+b;
+            float ad = a+b;
             printf("%.0f", ad);
             break;
         case '-': 
-            int s = a-b;
+            float s = a-b;
             printf("%.0f", s);
             break;
         case '*': 
-            int m = a*b;
+            float m = a*b;
             printf("%.0f", m);
             break;
         case '/': 
