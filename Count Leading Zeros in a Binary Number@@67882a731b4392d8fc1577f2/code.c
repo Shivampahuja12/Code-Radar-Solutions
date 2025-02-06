@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
-    long int n, i, count = 0;
-    scanf("%ld", &n);
+    int n, i, count = 0;
+    scanf("%d", &n);
     while (1){
         if ((k>>1)&1==1){
             break;
@@ -11,5 +11,5 @@ int main(){
         }
         i++;
     }
-    printf("%ld", 31-count);
+    printf("%d", 31-count);
 }
