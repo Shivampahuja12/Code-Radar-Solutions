@@ -3,7 +3,7 @@ int main(){
     long int n, i, count = 0;
     scanf("%ld", &n);
     while (1){
-        if ((n>>31)&1==1){
+        if ((k>>1)&1==1){
             break;
         }
         else {
@@ -11,5 +11,5 @@ int main(){
         }
         i++;
     }
-    printf("%ld", count);
+    printf("%ld", 31-count);
 }
