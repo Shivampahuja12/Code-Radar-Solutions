@@ -3,21 +3,20 @@ int main(){
     int a, b;
     char c;
     scanf("%d %d %c", &a, &b, &c);
-    switch(c){
-        case '+': 
-            float ad = a+b;
-            printf("%.0f", ad);
-            break;
-        case '-': 
-            float s = a-b;
-            printf("%.0f", s);
-            break;
-        case '*': 
-            float m = a*b;
-            printf("%.0f", m);
-            break;
-        case '/': 
-            int d = a / b;
+    if (c=='+'){
+        float sum = a+b;
+        printf("%.0f", sum);
+    } 
+    else if (c == '-'){
+        float sub = a-b;
+        printf("%.0f", sub);
+    }
+    else if (c == '*'){
+        float mul = a*b;
+        printf("%.0f", mul);
+    }
+    else {
+            float d = a / b;
             if (d>0){
                 printf("%.0f", d);
             }
