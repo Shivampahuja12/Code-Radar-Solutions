@@ -3,7 +3,7 @@ int main(){
     int a, b;
     char c;
     scanf("%d %d %c", &a, &b, &c);
-    if (c=='+'){
+    if (c == '+'){
         int sum = a+b;
         printf("%d", sum);
     } 
@@ -17,7 +17,7 @@ int main(){
     }
     else if (c == '/') {
             float d = a / b;
-            if (d>0){
+            if (b>0){
                 printf("%.0f", d);
             }
             else {
