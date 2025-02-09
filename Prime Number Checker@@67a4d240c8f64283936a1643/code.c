@@ -17,7 +17,7 @@ int isPrime(int n){
             break;
         }
     }
-    if (count == 0) return 1;
-    else return 0;
+    if (count == 0) return "1";
+    else return "0";
     return 1;
 }
