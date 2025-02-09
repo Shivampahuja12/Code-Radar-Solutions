@@ -15,7 +15,7 @@ int main(){
         int mul = a*b;
         printf("%d", mul);
     }
-    else {
+    else if (c == '/') {
             float d = a / b;
             if (d>0){
                 printf("%.0f", d);
