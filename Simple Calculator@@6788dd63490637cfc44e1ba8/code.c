@@ -5,18 +5,18 @@ int main(){
     scanf("%d %d %c", &a, &b, &c);
     if (c=='+'){
         int sum = a+b;
-        printf("%.0f", sum);
+        printf("%d", sum);
     } 
     else if (c == '-'){
         int sub = a-b;
-        printf("%.0f", sub);
+        printf("%d", sub);
     }
     else if (c == '*'){
         int mul = a*b;
-        printf("%.0f", mul);
+        printf("%d", mul);
     }
     else {
-            int d = a / b;
+            float d = a / b;
             if (d>0){
                 printf("%.0f", d);
             }
