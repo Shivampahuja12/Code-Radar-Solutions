@@ -5,24 +5,20 @@ int main(){
     scanf("%d %d", &a, &b);
     scanf(" %c", &c);
     if (c == '+'){
-        int sum = a+b;
-        printf("%d", sum);
+        printf("%d", a+b);
     } 
     else if (c == '-'){
-        int sub = a-b;
-        printf("%d", sub);
+        printf("%d", a-b);
     }
     else if (c == '*'){
-        int mul = a*b;
-        printf("%d", mul);
+        printf("%d", a*b);
     }
     else if (c == '/') {
-            float d = a / b;
             if (b==0){
-                printf("%.0f", d);
+                printf("error");
             }
             else {
-                printf("error");
+                printf("%.0f", a/b);
             }
     }
     else {
