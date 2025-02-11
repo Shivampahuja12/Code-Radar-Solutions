@@ -17,11 +17,14 @@ int main(){
     }
     else if (c == '/') {
             float d = a / b;
-            if (b>0){
-                printf("%.1f", d);
+            if (b==0){
+                printf("%.0f", d);
             }
             else {
                 printf("error");
             }
+    }
+    else {
+        printf("error");
     }
 }
