@@ -14,8 +14,11 @@ int main(){
     }
     smin = a[0];
     for (int i=0; i<n; i++){
-        if (min!=a[i] && smin > a[i]){
+        if (a[i] != min && smin > a[i]){
             smin = a[i];
+        }
+        else {
+            smin = -1;
         }
     }
     printf("%d", smin);
