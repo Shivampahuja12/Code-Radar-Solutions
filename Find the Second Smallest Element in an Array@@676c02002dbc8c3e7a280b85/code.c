@@ -20,10 +20,6 @@ int main(){
         if (a[i] != min && smin > a[i]){
             smin = a[i];
         }
-        else {
-            smin = -1;
-        }
-        
     }
     printf("%d", smin);
 }
