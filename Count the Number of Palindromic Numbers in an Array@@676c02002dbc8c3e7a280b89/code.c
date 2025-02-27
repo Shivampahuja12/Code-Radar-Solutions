@@ -4,9 +4,9 @@ int main(){
     scanf("%d", &t);
     while (t--){
         scanf("%d", &n);
-        int same = j;
+        int same = n;
         pal = 0;
-        for (i=j; i>0; i=i/10){
+        for (i=n; i>0; i=i/10){
             rem = i % 10;
             pal = pal * 10 + rem;
         }
