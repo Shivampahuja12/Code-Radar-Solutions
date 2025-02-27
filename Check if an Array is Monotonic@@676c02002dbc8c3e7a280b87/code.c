@@ -8,7 +8,11 @@ int main(){
         scanf("%d", &a[i]);
     }
     for (int i=1; i<n; i++){
-        if ((a[i-1] > a[i]) || (a[i-1] < a[i])){
+        if ((a[i-1] > a[i])){
+            flag = false;
+            break;
+        }
+        if ((a[i-1] < a[i])){
             flag = false;
             break;
         }
