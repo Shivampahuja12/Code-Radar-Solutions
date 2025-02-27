@@ -6,11 +6,11 @@ int main(){
     for (int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
-    for (int i=0; i<n; i++){
+    for (int i=1; i<n; i++){
         if (a[i] == 0){
             int temp = a[i];
-            a[i] = a[i+1];
-            a[i+1] = temp;
+            a[i] = a[i-1];
+            a[i-1] = temp;
         }
     }
     for (int i=0; i<n; i++){
