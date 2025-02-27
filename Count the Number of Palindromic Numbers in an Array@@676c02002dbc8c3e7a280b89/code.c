@@ -14,7 +14,6 @@ int main(){
         if (pal == same){
             count++;
         }
-        printf("%d", count);
-
     }
+    printf("%d", count);
 }
