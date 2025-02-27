@@ -8,9 +8,9 @@ int main(){
     }
     for (int i=1; i<n; i++){
         if (a[i] == 0){
-            int temp = a[i];
-            a[i] = a[i-1];
-            a[i-1] = temp;
+            int temp = a[i-1];
+            a[i-1] = a[i];
+            a[i] = temp;
         }
     }
     for (int i=0; i<n; i++){
