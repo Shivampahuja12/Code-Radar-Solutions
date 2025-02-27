@@ -10,6 +10,7 @@ int main(){
     for (int i=0; i<n; i++){
         if (a[i]==x){
             num = i;
+            break;
         }
     }
     printf("%d", num);
