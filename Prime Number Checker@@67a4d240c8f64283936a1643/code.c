@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include<math.h>
+#include<stdbool.h>
 int isPrime(int n){
-    int count = 0;
+    int flag = true;
     for (int i=2; i<n; i++){
         if (n%i==0) {
-            count = 1;
+            flag = false;
             break;
         }
     }
-    if (count == 0) printf("1\n");
+    if (flag == true) printf("1\n");
     else printf("0\n");
 }
