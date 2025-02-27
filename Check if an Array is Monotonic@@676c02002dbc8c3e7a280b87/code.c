@@ -1,18 +1,18 @@
 #include<stdio.h>
 #include<stdbool.h>
 int main(){
-    int n, flag = true;
+    int n, flag = 1;
     scanf("%d", &n);
     int a[n];
     for (int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
     for (int i=1; i<n; i++){
-        if ((a[i-1] >= a[i])){
+        if ((a[i-1] > a[i])){
             flag = false;
             break;
         }
-        if ((a[i-1] <= a[i])){
+        if ((a[i-1] < a[i])){
             flag = false;
             break;
         }
