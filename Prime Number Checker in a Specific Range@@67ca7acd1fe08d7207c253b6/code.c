@@ -1,7 +1,6 @@
 #include<stdio.h>
 void printPrimesInRange(int x, int y){
     int i, j, flag;
-    int i, j, flag;
     if (x < 2) {
         printf("No prime numbers");
     }
