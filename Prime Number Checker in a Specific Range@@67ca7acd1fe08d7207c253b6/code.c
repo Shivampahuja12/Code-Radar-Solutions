@@ -1,3 +1,4 @@
+#include<stdio.h>
 int printPrimesInRange(int x, int y){
     int i, j;
     for (i=x; i<y; i++){
