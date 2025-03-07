@@ -10,4 +10,5 @@ int printPrimesInRange(int x, int y){
         }
         if (flag == 1) printf("%d ", i);
     }
+    return 0;
 }
