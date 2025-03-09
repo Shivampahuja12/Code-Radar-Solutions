@@ -7,7 +7,8 @@ int main(){
         if (isupper(s[i])){
             s[i] = tolower(s[i]);
         }
-        if (islower(s[i])){
+        // if (islower(s[i]))
+        else {
             s[i] = toupper(s[i]);
         }
     }
