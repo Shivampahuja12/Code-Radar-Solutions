@@ -5,7 +5,7 @@ int main(){
     scanf("%[^\n]s", &str);
     for (int i=0; str[i]!='\0'; i++){
         flag = 0;
-        for (int j=0; str[j]!='\0'; j++){
+        for (int j=1; str[j]!='\0'; j++){
             if (str[j]==str[i]){
                 flag = 1;
                 break;
