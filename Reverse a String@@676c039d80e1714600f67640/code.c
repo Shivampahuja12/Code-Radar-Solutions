@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
-    char s[] = "abcde";
-
+    char s[20];
+    scanf("%[^\n]s", s);
     // Reversing string using strrev()
     printf("%s", strrev(s));
   
