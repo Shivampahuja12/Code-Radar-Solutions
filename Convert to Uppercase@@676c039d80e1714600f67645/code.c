@@ -5,10 +5,10 @@ int main(){
     scanf("%s", &s);
     for (int i=0; s[i]!='\0'; i++){
         if (islower(s[i])){
-            toupper(s[i]);
+            toupper('s[i]');
         }
         if (islower(s[i])){
-            tolower(s[i]);
+            tolower('s[i]');
         }
     }
     printf("%s", s);
