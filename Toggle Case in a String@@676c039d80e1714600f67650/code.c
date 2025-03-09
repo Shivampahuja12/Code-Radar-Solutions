@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<ctype.h>
 int main(){
-    char s[20];
-    scanf("%[^\n]s", s);
+    char s[50];
+    scanf("%[^\n]s", &s);
     for (int i=0; s[i]!='\0'; i++){
         if (isupper(s[i])){
             s[i] = tolower(s[i]);
