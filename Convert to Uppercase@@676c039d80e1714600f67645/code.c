@@ -7,9 +7,6 @@ int main(){
         if (islower(s[i])){
             toupper(s[i]);
         }
-        if (islower(s[i])){
-            tolower(s[i]);
-        }
     }
     printf("%s", s);
     return 0;
