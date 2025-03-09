@@ -5,7 +5,7 @@ int main(){
     scanf("%s", &s);
     for (int i=0; s[i]!='\0'; i++){
         if (islower(s[i])){
-            str[i] = toupper(s[i]);
+            s[i] = toupper(s[i]);
         }
     }
     printf("%s", s);
