@@ -8,9 +8,10 @@ int main(){
         for (int j=0; str[j]!='\0'; j++){
             if (str[j]==str[i]){
                 flag = 1;
-                break;
             }
-            else flag = 0;
+            else {
+                flag = 0;
+            }
         }
     }
     if (flag == 0) {
