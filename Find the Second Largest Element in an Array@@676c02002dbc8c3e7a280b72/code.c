@@ -18,7 +18,7 @@ int main(){
         if (max != a[i] && smax < a[i]){
             smax = a[i];
         }
-        if (n==1 || max==smax) smax = -1;
+        if (n==1 || smax = max) smax = -1;
         
     }
     printf("%d", smax);
