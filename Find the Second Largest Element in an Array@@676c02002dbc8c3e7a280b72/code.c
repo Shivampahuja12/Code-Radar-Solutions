@@ -15,11 +15,10 @@ int main(){
     }
     smax = INT_MIN;
     for (int i=0; i<n; i++){
-        if (n==1) smax = -1;
+        if (n==1 || a[i] == a[i++]) smax = -1;
         if (max != a[i] && smax < a[i]){
             smax = a[i];
         }
-        if (a[i] == a[i++]) smax = -1;
     }
     printf("%d", smax);
 }
