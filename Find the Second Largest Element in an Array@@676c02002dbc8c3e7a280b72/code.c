@@ -1,28 +1,22 @@
 #include <stdio.h>
 int main(){
-    int n;
+    int n, max, smax;
     scanf("%d", &n);
     int a[n];
     for (int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
-    int max(int [], int);
-    max(a, n);
-}
-
-int max(int a[], int n){
-    int max = a[0];
-    int smax = a[0];
-    for (int i=0; i<n; i++){
+    max = a[0];
+    for (int i=1; i<=n; i++){
         if (max < a[i]){
             max = a[i];
         }
     }
-    for (int i=0; i<n; i++){
-        if (smax < a[i] && a[i]!=max){
+    smax = a[0];
+    for (int i=1; i<=n; i++){
+        if (max != a[i] && smax < a[i]){
             smax = a[i];
         }
     }
-    if (smax > 0) return smax;
-    else return -1;
+    printf("%d", smax);
 }
