@@ -18,7 +18,7 @@ int main(){
             smax = a[i];
         }
         else {
-            smax = "-1";
+            smax = -1;
         }
     }
     printf("%d", smax);
