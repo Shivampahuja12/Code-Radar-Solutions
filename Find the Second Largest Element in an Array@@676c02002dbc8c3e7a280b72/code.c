@@ -16,11 +16,8 @@ int main(){
     for (int i=0; i<n; i++){
         if (max != a[i] && smax < a[i]){
             smax = a[i];
-            break;
         }
-        else {
-            smax = -1;
-        }
+        if (!smax) smax = -1;
     }
     printf("%d", smax);
 }
