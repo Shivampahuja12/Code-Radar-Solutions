@@ -15,7 +15,6 @@ int main(){
     }
     smax = INT_MIN;
     for (int i=0; i<n; i++){
-        smax = -1;
         if (max != a[i] && smax < a[i]){
             smax = a[i];
         }
