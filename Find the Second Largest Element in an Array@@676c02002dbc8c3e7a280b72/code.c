@@ -14,10 +14,10 @@ int main(){
     }
     smax = a[0];
     for (int i=0; i<n; i++){
+        smax = -1;
         if (max != a[i] && smax < a[i]){
             smax = a[i];
         }
-        if (!smax) smax = -1;
     }
     printf("%d", smax);
 }
