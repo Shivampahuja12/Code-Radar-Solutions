@@ -38,6 +38,7 @@ int main(){
     smax = INT_MAX;
     for (int i=0; i<n; i++){
         if (n==1) smax = -1;
+        if (a[0] == a[1]) smax = -1;
         if (max != a[i] && smax > a[i]){
             smax = a[i];
         }
