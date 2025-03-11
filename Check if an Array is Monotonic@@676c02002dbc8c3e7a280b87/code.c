@@ -7,20 +7,14 @@ int main(){
     for (int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
-    for (int i=1; i<n; i++){
-        if ((a[i-1] >= a[i])){
-            flag = false;
-            break;
-        }
-        if ((a[i-1] <= a[i])){
-            flag = false;
-            break;
+    for (int i=0; i<n; i++){
+        if (a[i] < a[i+1]) {
+            printf("YES");
         }
     }
-    if (flag == true){
-        printf("YES");
-    }
-    else {
-        printf("NO");
+    for (int i=0; i<n; i++){
+        if (a[i] > a[i+1]) {
+            printf("YES");
+        }
     }
 }
