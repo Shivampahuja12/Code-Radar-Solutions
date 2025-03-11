@@ -23,25 +23,25 @@ int main(){
 #include <stdio.h>
 #include <limits.h>
 int main(){
-    int n, max, smax;
+    int n, min, smin;
     scanf("%d", &n);
     int a[n];
     for (int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
-    max = INT_MAX;
+    min = INT_MAX;
     for (int i=0; i<n; i++){
-        if (max > a[i]){
-            max = a[i];
+        if (min > a[i]){
+            min = a[i];
         }
     }
-    smax = INT_MAX;
+    smin = INT_MAX;
     for (int i=0; i<n; i++){
-        if (n==1) smax = -1;
-        if (a[0] == a[1]) smax = -1;
-        if (max != a[i] && smax > a[i]){
-            smax = a[i];
+        if (n==1) smin = -1;
+        if (a[0] == a[1]) smin = -1;
+        if (min != a[i] && smin > a[i]){
+            smin = a[i];
         }
     }
-    printf("%d", smax);
+    printf("%d", smin);
 }
