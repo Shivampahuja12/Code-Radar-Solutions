@@ -8,11 +8,11 @@ int main(){
         scanf("%d", &a[i]);
     }
 
-    flag = 0;
     if (n==1) printf("YES");
     else if (a[0] == a[1]) printf("YES");
     else if (a[0] > a[1]){
         for (int i=0; i<n-1; i++){
+        flag = 0;
         if (a[i] > a[i+1]) {
             flag = 1;
         }
@@ -21,8 +21,9 @@ int main(){
         else printf("NO");
     }
     else {
-        flag = 0;
+        
         for (int i=0; i<n-1; i++){
+        flag = 0;
         if (a[i] < a[i+1]) {
             flag = 1;
         }
