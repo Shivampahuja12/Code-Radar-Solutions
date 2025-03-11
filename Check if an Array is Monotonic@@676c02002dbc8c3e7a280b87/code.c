@@ -9,20 +9,27 @@ int main(){
     }
 
     flag = 0;
-    for (int i=0; i<n-1; i++){
+    if (a[0] > a[1]){
+        for (int i=0; i<n-1; i++){
+        if (a[i] > a[i+1]) {
+            flag = 1;
+        }
+    }
+        if (flag == 1) printf("YES");
+        else printf("NO");
+    }
+    else {
+        flag = 0;
+        for (int i=0; i<n-1; i++){
         if (a[i] < a[i+1]) {
             flag = 1;
         }
     }
     if (flag == 1) printf("YES");
     else printf("NO");
-
-    flag = 0;
-    for (int i=0; i<n-1; i++){
-        if (a[i] > a[i+1]) {
-            flag = 1;
-        }
     }
-    if (flag == 1) printf("YES");
-    else printf("NO");
+
+    
+    
+    
 }
