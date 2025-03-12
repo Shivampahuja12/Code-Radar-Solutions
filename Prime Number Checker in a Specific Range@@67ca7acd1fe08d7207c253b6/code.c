@@ -8,9 +8,9 @@ int isPrime(int a){
     return 1;
 }
 void printPrimesInRange(int a , int b){
-    if(a<1) a = 2;
+    if(a<2) a = 2;
     int check = 0;
-    for(int i = a ; i < b ;i++){
+    for(int i = a ; i <= b ;i++){
         if(isPrime(i)){
             printf("%d ",i);
             check = 1;
