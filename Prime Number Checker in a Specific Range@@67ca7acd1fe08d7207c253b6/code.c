@@ -8,7 +8,7 @@ int isPrime(int a){
     return 1;
 }
 void printPrimesInRange(int a , int b){
-    if(a<0) a = 2;
+    if(a<1) a = 2;
     int check = 0;
     for(int i = a ; i < b ;i++){
         if(isPrime(i)){
