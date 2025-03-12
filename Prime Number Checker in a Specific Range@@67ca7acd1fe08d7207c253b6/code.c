@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdio.h>
-char printPrimesInRange(int a, int b){
+int printPrimesInRange(int a, int b){
     int i, j, flag;
     if (a<=1){
         for (i=2; i<=b; i++){
@@ -14,7 +14,7 @@ char printPrimesInRange(int a, int b){
             }
             if (flag) printf("%d ", i);
         }
-        printf("No prime numbers");
+        if (flag == 0) printf("No prime numbers");
     }
     else {
         for (i=a; i<=b; i++){
@@ -28,6 +28,6 @@ char printPrimesInRange(int a, int b){
             }
             if (flag) printf("%d ", i);
         }
-        printf("No prime numbers");
+        if (flag == 0) printf("No prime numbers");
     }
 }
