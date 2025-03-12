@@ -16,5 +16,5 @@ int main(){
             maxFreqEle = a[i];
         }
     }
-    printf("%d", maxfreqele);
+    printf("%d", maxFreqEle);
 }
