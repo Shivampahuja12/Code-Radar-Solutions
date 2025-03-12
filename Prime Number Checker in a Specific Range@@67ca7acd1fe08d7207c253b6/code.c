@@ -16,7 +16,7 @@ char printPrimesInRange(int a, int b){
             printf("No prime numbers");
             break;
         }
-        return "No prime numbers";
+        printf("No prime numbers");
     }
     else {
         for (i=a; i<=b; i++){
@@ -32,6 +32,6 @@ char printPrimesInRange(int a, int b){
             printf("No prime numbers");
             break;
         }
-        return "No prime numbers";
+        printf("No prime numbers");
     }
 }
