@@ -13,8 +13,6 @@ char printPrimesInRange(int a, int b){
                 }
             }
             if (flag) printf("%d ", i);
-            printf("No prime numbers");
-            break;
         }
         printf("No prime numbers");
     }
@@ -29,8 +27,6 @@ char printPrimesInRange(int a, int b){
                 }
             }
             if (flag) printf("%d ", i);
-            printf("No prime numbers");
-            break;
         }
         printf("No prime numbers");
     }
