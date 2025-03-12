@@ -1,21 +1,37 @@
 #include<stdio.h>
-void printPrimesInRange(int x, int y){
+#include<stdio.h>
+char printPrimesInRange(int a, int b){
     int i, j, flag;
-    if (x < 2) {
-        printf("No prime numbers");
-    }
-    else {
-        for (i=x; i<=y; i++){
-            flag = 0;
-            for (j=2; j<i; j++){
+    if (a<=1){
+        for (i=2; i<=b; i++){
+            if (i==0 || i==1) continue;
+            flag = 1;
+            for (j=2; j<=i/2; j++){
                 if (i%j==0){
-                    flag = 1;
+                    flag = 0;
                     break;
                 }
             }
-            if (flag == 0) printf("%d ", i);
-            else printf("No prime numbers");
+            if (flag) printf("%d ", i);
+            printf("No prime numbers");
+            break;
         }
+        return "No prime numbers";
     }
-    return;
+    else {
+        for (i=a; i<=b; i++){
+            if (i==0 || i==1) continue;
+            flag = 1;
+            for (j=2; j<=i/2; j++){
+                if (i%j==0){
+                    flag = 0;
+                    break;
+                }
+            }
+            if (flag) printf("%d ", i);
+            printf("No prime numbers");
+            break;
+        }
+        return "No prime numbers";
+    }
 }
