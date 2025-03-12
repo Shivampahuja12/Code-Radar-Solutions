@@ -1,34 +1,21 @@
 #include<stdio.h>
-int printPrimesInRange(int a, int b){
-    int i, j, flag , bool = 0;
-    if (a<=1){
-        for (i=2; i<=b; i++){
-            if (i==0 || i==1) continue;
-            flag = 1;
-            for (j=2; j<=i/2; j++){
-                if (i%j==0){
-                    bool = 1;
-                    flag = 0;
-                    break;
-                }
-            }
-            if (flag) printf("%d ", i);
+int isPrime(int a){
+    for(int i = 2  ; i <  a ;i++){
+        if(a%i==0){
+            return 0;
         }
-        if (bool) printf("No prime numbers");
     }
-    else {
-        for (i=a; i<=b; i++){
-            if (i==0 || i==1) continue;
-            flag = 1;
-            for (j=2; j<=i/2; j++){
-                if (i%j==0){
-                    bool = 1;
-                    flag = 0;
-                    break;
-                }
-            }
-            if (flag) printf("%d ", i);
+    return 1;
+}
+void printPrimeInRange(int a , int b){
+    int check = 0;
+    for(int i = 2 ; i < b ;i++){
+        if(isPrime(i)){
+            printf("%d ",i);
+            check = 1;
         }
-        if (bool) printf("No prime numbers");
+    }
+    if(check){
+        printf("No prime numbers");
     }
 }
