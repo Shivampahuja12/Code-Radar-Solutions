@@ -7,7 +7,7 @@ int isPrime(int a){
     }
     return 1;
 }
-void printPrimeInRange(int a , int b){
+void printPrimesInRange(int a , int b){
     int check = 0;
     for(int i = 2 ; i < b ;i++){
         if(isPrime(i)){
