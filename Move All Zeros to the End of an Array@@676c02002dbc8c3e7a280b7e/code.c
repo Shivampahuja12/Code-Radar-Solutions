@@ -7,10 +7,12 @@ int main(){
         scanf("%d", &a[i]);
     }
     for (int i=0; i<n; i++){
-        if (a[i] == 0){
-            int temp = a[i];
-            a[i] = a[i-1];
-            a[i-1] = temp;
+        for (int j=i+1; j<n; j++){
+            if (a[i] > a[j]){
+                int temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
         }
     }
     for (int i=0; i<n; i++){
