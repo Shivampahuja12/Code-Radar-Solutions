@@ -3,7 +3,7 @@ int main(){
     int n, count;
     scanf("%d", &n);
     int a[n];
-    int maxFreqEle = a[0], maxFreq = 0;
+    int maxFreqEle, maxFreq = 0;
     for (int i=0; i<n; i++){
         count = 0;
         for (int j=i+1; j<n; j++){
