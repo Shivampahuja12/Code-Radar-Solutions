@@ -8,8 +8,8 @@ void uniques(int a[], int n, int target) {
                 printf("%d %d\n", a[i], a[j]);
                 flag = 0;
             }
-            if(flag == 0) return;
         }
+        if(flag == 0) return;
     }
 }
 int main(){
