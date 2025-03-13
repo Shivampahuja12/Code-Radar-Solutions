@@ -13,6 +13,9 @@ int main(){
                 printf("%d %d\n", a[i], a[j]);
                 break;
             }
+            if (a[i]+a[j] == x && i==j) {
+                break;
+            }
         }
     }
     return 0;
