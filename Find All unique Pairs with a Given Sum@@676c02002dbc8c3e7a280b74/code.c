@@ -11,7 +11,7 @@ int main(){
         for (j=i+1; j<n; j++){
             if (a[i]+a[j] == x && i!=j){
                 printf("%d %d\n", a[i], a[j]);
-                flag == 0;
+                flag = 0;
                 break;
             }
         }
