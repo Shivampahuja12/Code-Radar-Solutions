@@ -6,7 +6,7 @@ int majorityElement(int a[], int n) {
         for (int j=i+1; j<n; j++) {
             if (a[i] == a[j]) count++;
         }
-        if (count > (n/2) + 1) return count;
+        if (count > (n/2)) return count;
     }
     return -1;
 }
