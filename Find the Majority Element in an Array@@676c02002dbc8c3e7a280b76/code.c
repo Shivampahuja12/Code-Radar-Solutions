@@ -1,8 +1,9 @@
 #include<stdio.h>
 int majorityElement(int a[], int n) {
-    int count, flag = 1;
+    int count, flag;
     for (int i=0; i<n; i++) {
         count = 1;
+        flag = 1;
         for (int j=i+1; j<n; j++) {
             if (a[i] == a[j]) {
                 flag = 0;
