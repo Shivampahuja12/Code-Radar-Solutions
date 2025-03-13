@@ -10,6 +10,7 @@ int majorityElement(int a[], int n) {
             }
         }
         if (count) return a[i];
+        else return -1;
     }
     return -1;
 }
