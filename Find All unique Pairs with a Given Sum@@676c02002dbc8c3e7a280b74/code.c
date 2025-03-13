@@ -1,5 +1,6 @@
 #include<stdio.h>
 void uniques(int a[], int n, int target) {
+    int i, j, flag;
     for (i=0; i<n; i++){
         flag = 1;
         for (j=i+1; j<n; j++){
