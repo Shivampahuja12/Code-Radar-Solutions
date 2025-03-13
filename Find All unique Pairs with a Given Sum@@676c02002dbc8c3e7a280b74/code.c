@@ -13,10 +13,10 @@ int main(){
             if (a[i]+a[j] == x && i!=j){
                 printf("%d %d\n", a[i], a[j]);
                 flag = 0;
+                break;
             }
-            
         }
-        if(flag == 0 || a[i] == a[j]) break;
+        if (a[i] == a[j]) break;
     }
     return 0;
 }
