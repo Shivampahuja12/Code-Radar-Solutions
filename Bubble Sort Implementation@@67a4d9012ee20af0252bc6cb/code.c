@@ -12,7 +12,7 @@ void bubbleSort(int a[], int n) {
     }
 }
 void printArray(int a[], int n) {
-    for (int i=1; i<=n; i++) {
-        printf("%d ", &a[i]);
+    for (int i=0; i<n; i++) {
+        printf("%d ", a[i]);
     }
 }
