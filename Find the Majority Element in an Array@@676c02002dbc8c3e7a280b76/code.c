@@ -1,4 +1,15 @@
 #include<stdio.h>
+void majorityElement(int a[], int n) {
+    int count;
+    for (int i=0; i<n; i++) {
+        count = 0;
+        for (int j=i+1; j<n; j++) {
+            if (a[i] == a[j]) count++;
+        }
+        if (count > (n/2) + 1) return count;
+    }
+    return -1;
+}
 int main(){
     int n;
     scanf("%d", &n);
@@ -6,5 +17,5 @@ int main(){
     for (int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
-    
+    majorityElement(a, n);
 }
