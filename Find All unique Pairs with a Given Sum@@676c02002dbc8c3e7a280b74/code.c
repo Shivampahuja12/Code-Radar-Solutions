@@ -14,8 +14,9 @@ int main(){
                 printf("%d %d\n", a[i], a[j]);
                 flag = 0;
             }
-            if(flag == 0 || a[i] == a[j]) break;
+            
         }
+        if(flag == 0 || a[i] == a[j]) break;
     }
     return 0;
 }
