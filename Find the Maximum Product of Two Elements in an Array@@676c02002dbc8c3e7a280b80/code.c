@@ -12,4 +12,5 @@ int main() {
             max = a[i]*a[j];
         }
     }
+    printf("%d", max);
 }
