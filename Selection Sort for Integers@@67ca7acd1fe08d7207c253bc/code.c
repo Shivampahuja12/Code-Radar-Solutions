@@ -18,7 +18,4 @@ int selectionSort(int a[], int n){
         }
         swap(a[i], a[mindx]);
     }
-    for (int i=0; i<n; i++){
-        printf("%d ", a[i]);
-    }
 }
