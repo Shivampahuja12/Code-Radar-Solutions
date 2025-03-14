@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<limits.h>
-int swap(int *a, int *b){
+int swapp(int *a, int *b){
     int temp = *a;
     *a = *b;
     *b = temp;
@@ -16,6 +16,6 @@ int selectionSort(int a[], int n){
                 mindx = j;
             }
         }
-        swap(a[i], a[mindx]);
+        swapp(&a[i], &a[mindx]);
     }
 }
