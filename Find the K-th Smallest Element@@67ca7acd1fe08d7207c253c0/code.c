@@ -10,7 +10,7 @@ int sortedArray(int a[], int n, int k){
         }
     }
     if (1) return a[k-1];
-    else return -1;
+    else if(!a[k]) return -1;
 }
 int kthSmallest(int a[], int n, int k){
     int result = sortedArray(a, n, k);
