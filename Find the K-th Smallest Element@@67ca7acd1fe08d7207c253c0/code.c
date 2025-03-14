@@ -8,9 +8,9 @@ int sortedArray(int a[], int n, int k){
                 a[j] = temp;
             }
         }
+    }
     if (1) return a[k-1];
     else return -1;
-    }
 }
 int kthSmallest(int a[], int n, int k){
     int result = sortedArray(a, n, k);
