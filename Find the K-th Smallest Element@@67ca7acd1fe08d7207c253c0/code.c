@@ -11,6 +11,6 @@ int sortedArray(int a[], int n){
     }
 }
 int kthSmallest(int a[], int n, int k){
-    sortedArray(a, n);
-    // printf("%d", a[k-1]);
+    int result = sortedArray(a, n);
+    printf("%d", a[k-1]);
 }
