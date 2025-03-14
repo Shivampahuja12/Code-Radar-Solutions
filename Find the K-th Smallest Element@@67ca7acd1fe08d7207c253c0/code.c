@@ -13,5 +13,5 @@ int sortedArray(int a[], int n, int k){
     else return -1;
 }
 int kthSmallest(int a[], int n, int k){
-    int result = sortedArray(a, n);
+    int result = sortedArray(a, n, k);
 }
