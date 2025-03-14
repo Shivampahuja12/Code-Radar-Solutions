@@ -5,4 +5,5 @@ int searchInRotatedArray(int a[], int n, int target){
             return i;
         }
     }
+    return -1;
 }
