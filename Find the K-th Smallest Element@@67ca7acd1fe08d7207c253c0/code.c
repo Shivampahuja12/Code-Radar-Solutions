@@ -1,7 +1,8 @@
 #include<stdio.h>
 int sortedArray(int a[], int n, int k){
-    for (int i=0; i<n; i++){
-        for (int j=i+1; j<n; j++){
+    int i ,j;
+    for (i=0; i<n; i++){
+        for (j=i+1; j<n; j++){
             if (a[i] > a[j]){
                 int temp = a[i];
                 a[i] = a[j];
@@ -9,7 +10,7 @@ int sortedArray(int a[], int n, int k){
             }
         }
     }
-    if (!k) return -1;
+    if (k!=i) return -1;
     else return a[k-1];
 }
 int kthSmallest(int a[], int n, int k){
