@@ -4,7 +4,7 @@ int main() {
     char s[20];
     int i = 0, size = 0;
     scanf("%[^\n]s", s);
-    while (str[i]!='\0'){
+    while (s[i]!='\0'){
         size++;
         i++;
     }
