@@ -8,6 +8,8 @@ int main() {
         size++;
         i++;
     }
-    printf("%d", size);
+    for(int i=size-1; i>=0; i--){
+        printf("%c", s[i]);
+    }
     return 0;
 }
