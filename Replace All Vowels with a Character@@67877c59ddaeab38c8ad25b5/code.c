@@ -5,7 +5,7 @@ int main(){
     scanf(" %c", &ch);
     for (int i=0; s[i]!='\0'; i++){
         if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' || s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U'){
-            ch = s[i];
+            s[i] = ch;
         }
     }
     printf("%s", s);
