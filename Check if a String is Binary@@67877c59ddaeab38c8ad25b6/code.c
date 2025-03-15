@@ -4,7 +4,10 @@ int main(){
     int flag = 1;
     scanf("%[^\n]s", s);
     for (int i=0; s[i]!='\0'; i++){
-        if (s[i] != '1' || s[i] != '0'){
+        if (s[i] == '1' || s[i] == '0'){
+            continue;
+        }
+        else{
             flag = 0;
             break;
         }
