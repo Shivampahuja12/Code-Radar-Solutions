@@ -7,7 +7,9 @@ int main(){
         scanf("%d", &a[i]);
     }
     int checkPrime(int [], int);
-    printf("%d", checkPrime(a, n));
+
+    int result = checkPrime(a, n);
+    printf("%d", result);
     return 0;
 }
 int checkPrime(int a[], int n){
@@ -16,7 +18,7 @@ int checkPrime(int a[], int n){
         if (a[i]%i==0){
             continue;
         }
-        else {
+        else{
             count += 1;
         }
     }
