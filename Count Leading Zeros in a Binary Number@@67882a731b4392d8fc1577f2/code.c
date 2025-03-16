@@ -12,8 +12,9 @@ int main(){
         }
         i++;
     }
-    if (n > INT_MAX || n < INT_MIN){
+    if (n !> INT_MAX || n !< INT_MIN){
         printf("%ld", 31-count);
     }
+    else printf("0");
     return 0;
 }
