@@ -2,7 +2,7 @@
 #include <limits.h>
 int main(){
     long int n, i = 0, count = 0;
-    scanf("%ld", &n);
+    scanf("%d", &n);
     while (1){
         if ((n>>i)&1==1){
             break;
@@ -13,7 +13,7 @@ int main(){
         i++;
     }
     if (n <= INT_MAX || n >= INT_MIN){
-        printf("%ld", 31-count);
+        printf("%d", 31-count);
     }
     else printf("0");
     return 0;
