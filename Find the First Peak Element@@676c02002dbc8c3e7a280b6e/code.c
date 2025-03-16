@@ -7,6 +7,6 @@ int main(){
         scanf("%d", &a[i]);
     }
     for (int i=1; i<n; i++){
-        if (a[i]>a[i-1] && a[i] > a[i+1]) printf("%d", i);
+        if (a[i]>a[i-1] && a[i] > a[i+1]) printf("%d", a[i]);
     }
 }
