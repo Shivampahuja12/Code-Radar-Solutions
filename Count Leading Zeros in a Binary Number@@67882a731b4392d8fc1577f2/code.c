@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 int main(){
     long int n, i = 0, count = 0;
     scanf("%ld", &n);
@@ -11,5 +12,8 @@ int main(){
         }
         i++;
     }
-    printf("%ld", 31-count);
+    if (n > INT_MAX || n < INT_MIN){
+        printf("%ld", 31-count);
+    }
+    return 0;
 }
