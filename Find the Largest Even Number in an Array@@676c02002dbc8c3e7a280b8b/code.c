@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-
 int max(int a[], int n) {
     int max = a[0], odd = 0;
     for (int i=0; i<n; i++){
