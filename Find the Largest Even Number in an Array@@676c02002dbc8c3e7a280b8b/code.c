@@ -14,8 +14,6 @@ int max(int a[], int n) {
     if (odd / n == 1) return -1;
     else  return max;
 }
-
-
 int main(){
     int n;
     scanf("%d", &n);
