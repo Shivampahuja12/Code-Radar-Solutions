@@ -19,3 +19,8 @@ int selectionSort(int a[], int n){
         swapp(&a[i], &a[mindx]);
     }
 }
+void printArray(int a[], int n){
+    for (int i=0; i<n; i++){
+        printf("%d ", a[i]);
+    }
+}
