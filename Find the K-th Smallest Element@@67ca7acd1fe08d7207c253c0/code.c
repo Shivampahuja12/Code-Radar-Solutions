@@ -1,7 +1,8 @@
 #include<stdio.h>
 int sortedArray(int a[], int n, int k){
+    int count = 0;
     for (int i=0; i<n; i++){
-        int count = 0;
+        count = 0;
         for (int j=i+1; j<n; j++){
             if (a[i] > a[j]){
                 int temp = a[i];
