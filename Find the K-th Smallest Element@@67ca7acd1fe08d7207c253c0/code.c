@@ -11,7 +11,6 @@ int sortedArray(int a[], int n, int k){
             }
             if (k == a[i]){
                 count = 1;
-                continue;
             }
         }
     }
