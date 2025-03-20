@@ -19,6 +19,6 @@ int main(){
             maxElement = a[i];
         }
     }
-    printf("%d", maxFreq);
+    printf("%d", maxElement);
     return 0;
 }
