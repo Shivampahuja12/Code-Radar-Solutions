@@ -11,7 +11,7 @@ void factorialRange(int s, int e){
         int x = findFact(i);
         if (s > e || (s < 0 || e < 0)){
             printf("Invalid range");
-            break;
+            return;
         }
         else{
             printf("%d\n", x);
