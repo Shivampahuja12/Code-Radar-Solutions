@@ -9,6 +9,11 @@ int findFact(int i){
 void factorialRange(int s, int e){
     for (int i=s; i<=e; i++){
         int x = findFact(i);
-        printf("%d\n", x);
+        if (s > e || s < 0 || e < 0){
+            printf("Invalid range");
+        }
+        else{
+            printf("%d\n", x);
+        }
     }
 }
