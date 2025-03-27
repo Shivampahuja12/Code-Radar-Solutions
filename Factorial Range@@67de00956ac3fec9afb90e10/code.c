@@ -7,14 +7,12 @@ int findFact(int i){
     return fact;
 }
 void factorialRange(int s, int e){
-    for (int i=s; i<=e; i++){
-        int x = findFact(i);
-        if (s > e || (s < 0 || e < 0)){
+    if (s > e || (s < 0 || e < 0)){
             printf("Invalid range");
             return;
         }
-        else{
-            printf("%d\n", x);
-        }
+    for (int i=s; i<=e; i++){
+        int x = findFact(i);
+        printf("%d\n", x);
     }
 }
