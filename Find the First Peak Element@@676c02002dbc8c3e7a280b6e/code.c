@@ -8,8 +8,10 @@ int main(){
         scanf("%d", &a[i]);
     }
     for (int i=1; i<n-1; i++){
-        if (a[i]>a[i-1] && a[i] > a[i+1]) idx = a[i];
-        break;
+        if (a[i]>a[i-1] && a[i] > a[i+1]){
+            idx = a[i];
+            break;
+        } 
     }
     printf("%d", idx);
     return 0;
