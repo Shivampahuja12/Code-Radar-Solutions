@@ -1,6 +1,6 @@
 #include<stdio.h>
 void insertionSort(char a[], int n){
-    for (int i=1; i<n-1; i++){
+    for (int i=1; i<n; i++){
         char temp = a[i];
         int j = i-1;
         while (j>=0 && a[j] > temp){
