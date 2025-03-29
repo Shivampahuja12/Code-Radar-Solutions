@@ -4,7 +4,7 @@ void swapper(char *a, char *b){
     *a = *b;
     *b = temp;
 }
-void selectionSort(int a[], int n){
+void selectionSort(char a[], int n){
     for (int i=1; i<6; i++){
         char j = i;
         while (j>=1 && a[j] < a[j-1]){
