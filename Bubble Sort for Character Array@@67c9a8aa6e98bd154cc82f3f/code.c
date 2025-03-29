@@ -1,16 +1,17 @@
 #include<stdio.h>
-void swapp(int *a, int *b){
+void swapp(char *a, char *b){
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-int main(){
-    int n;
-    scanf("%d", &n);
-    char s[n];
+void printArray(char s[], int n){{
     for (int i=0; i<n; i++){
-        scanf("%c", &s[i]);
+        printf("%c ", s[i]);
     }
+}
+
+}
+void bubbleSort(char s[], int n){
     int a = 97;
     for (int i=0; i<n; i++){
         for (int j=i+1; j<n; j++){
@@ -20,7 +21,5 @@ int main(){
         }
     }
     printf("Sorted array: ");
-    for (int i=0; i<n; i++){
-        printf("%c ", s[i]);
-    }
+    
 }
