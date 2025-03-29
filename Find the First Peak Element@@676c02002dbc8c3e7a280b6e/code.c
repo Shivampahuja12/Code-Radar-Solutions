@@ -8,7 +8,7 @@ int main(){
         scanf("%d", &a[i]);
     }
     for (int i=1; i<n-1; i++){
-        if (a[i]>a[i-1] && a[i] > a[i+1]){
+        if (((i == 0 || arr[i-1] < arr[i]) && (i == n-1 || arr[i] > arr[i+1]))){
             idx = a[i];
             break;
         } 
