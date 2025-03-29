@@ -5,7 +5,7 @@ void swapper(char *a, char *b){
     *b = temp;
 }
 void selectionSort(char a[], int n){
-    for (int i=1; i<6; i++){
+    for (int i=1; i<n; i++){
         char j = i;
         while (j>=1 && a[j] < a[j-1]){
             if (a[j] >= a[j-1]){
@@ -18,7 +18,7 @@ void selectionSort(char a[], int n){
         }
     }
 }
-void printArray(int a[], int n){
+void printArray(char a[], int n){
     for (int i=0; i<n; i++){
         printf("%c ", a[i]);
     }
