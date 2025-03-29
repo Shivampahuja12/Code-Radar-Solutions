@@ -20,6 +20,4 @@ void bubbleSort(char s[], int n){
             }
         }
     }
-    printf("Sorted array: ");
-    
 }
