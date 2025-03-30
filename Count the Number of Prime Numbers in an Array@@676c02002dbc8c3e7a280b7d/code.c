@@ -5,16 +5,14 @@ int countPrime(int a[], int n){
     for(int i=0; i<n; i++){
         flag = 0;
         for(int j=2; j<=(a[i]/2)+1; j++){
-            if (i>=2){
                 if (a[i]%j==0){
                     flag = 1;
                     continue;
                 }
-            }
         }
         if (flag == 0 && a[i]!=1 && a[i]!=0) count++;
     }
-    printf("%d ", count);
+    printf("%d", count);
 }
 int main(){
     int n;
