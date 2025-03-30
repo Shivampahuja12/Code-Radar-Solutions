@@ -4,7 +4,7 @@ int countPrime(int a[], int n){
     int count = 0, flag;
     for(int i=0; i<n; i++){
         flag = 0;
-        for(int j=2; j<=(a[i]/2)+1; j++){
+        for(int j=2; j<=(a[i]/2); j++){
                 if (a[i]%j==0){
                     flag = 1;
                     continue;
