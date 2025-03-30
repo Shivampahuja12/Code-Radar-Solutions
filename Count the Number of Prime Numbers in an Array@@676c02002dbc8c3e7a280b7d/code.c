@@ -12,7 +12,7 @@ int countPrime(int a[], int n){
                 }
             }
         }
-        if (flag == 0) count++;
+        if (flag == 0 && a[i]!=1 && a[i]!=0) count++;
     }
     printf("%d ", count);
 }
