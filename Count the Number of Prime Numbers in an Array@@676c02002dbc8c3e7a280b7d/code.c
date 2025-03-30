@@ -1,4 +1,21 @@
-#include <stdio.h>
+// count the number of prime numbers in an array.
+#include<stdio.h>
+int countPrime(int a[], int n){
+    int count = 0, flag;
+    for(int i=0; i<n; i++){
+        flag = 0;
+        for(int j=2; j<=(a[i]/2)+1; j++){
+            if (i>=2){
+                if (a[i]%j==0){
+                    flag = 1;
+                    continue;
+                }
+            }
+        }
+        if (flag == 0) count++;
+    }
+    printf("%d ", count);
+}
 int main(){
     int n;
     scanf("%d", &n);
@@ -6,20 +23,5 @@ int main(){
     for (int i=0; i<n; i++){
         scanf("%d", &a[i]);
     }
-    int checkPrime(int [], int);
-    int result = checkPrime(a, n);
-    printf("%d", result);
-    return 0;
-}
-int checkPrime(int a[], int n){
-    int count = 0;
-    for (int i=0, k=2; i<n; i++, k++){
-        if (a[i]%k==0){
-            continue;
-        }
-        else{
-            count += 1;
-        }
-    }
-    return count;
+    countPrime(a, n);
 }
