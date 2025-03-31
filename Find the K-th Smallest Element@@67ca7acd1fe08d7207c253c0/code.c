@@ -8,10 +8,10 @@ int sortedArray(int a[], int n, int k){
                 a[i] = a[j];
                 a[j] = temp;
             }
-            if (k!=a[j]){
-                flag = 1;
-                break;
-            }
+        }
+        if (k!=a[i]){
+            flag = 1;
+            break;
         }
     }
     if (flag == 0) return a[k-1];
