@@ -8,10 +8,9 @@ int sortedArray(int a[], int n, int k){
                 a[i] = a[j];
                 a[j] = temp;
             }
-        }
-        if (k == a[i]){
-            count++;
-            break;
+            if (k == a[j]){
+                count++;
+            }
         }
     }
     if (count >= 1) return a[k-1];
