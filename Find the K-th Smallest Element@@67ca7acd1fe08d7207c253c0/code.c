@@ -8,10 +8,14 @@ int sortedArray(int a[], int n, int k){
                 a[i] = a[j];
                 a[j] = temp;
             }
-            return a[k-1];
+        }
+        if (k == a[i]){
+            count++;
+            break;
         }
     }
-    return -1;
+    if (count >= 1) return a[k-1];
+    else return -1;
 }
 int kthSmallest(int a[], int n, int k){
     int result = sortedArray(a, n, k);
