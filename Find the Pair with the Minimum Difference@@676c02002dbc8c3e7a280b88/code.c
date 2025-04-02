@@ -1,8 +1,9 @@
 #include<stdio.h>
+#include<limits.h>
 void findPair(int a[], int n){
     int i, j, min;
-    for (i=0; i<n; i++){
-        min = a[0];
+    for (i=0; i<n-1; i++){
+        min = INT_MAX;
         for (j=i+1; j<n; j++){
             if (a[i] - a[j] > min){
                 min = a[i] - a[j];
