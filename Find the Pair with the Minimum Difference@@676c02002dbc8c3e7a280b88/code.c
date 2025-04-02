@@ -1,8 +1,9 @@
 #include<stdio.h>
 void findPair(int a[], int n){
-    for (int i=0; i<n; i++){
-        int min = a[0];
-        for (int j=i+1; j<n; j++){
+    int i, j, min;
+    for (i=0; i<n; i++){
+        min = a[0];
+        for (j=i+1; j<n; j++){
             if (a[i] - a[j] > min){
                 min = a[i] - a[j];
             }
