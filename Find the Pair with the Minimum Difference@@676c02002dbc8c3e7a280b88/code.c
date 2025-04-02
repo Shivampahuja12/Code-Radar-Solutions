@@ -1,5 +1,5 @@
 #include<stdio.h>
-void findPair(int a[], int n){
+int findPair(int a[], int n){
     for (int i=0; i<n; i++){
         int min = a[0];
         for (int j=i+1; j<n; j++){
