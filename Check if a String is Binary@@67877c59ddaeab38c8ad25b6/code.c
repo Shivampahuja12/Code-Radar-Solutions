@@ -6,7 +6,7 @@ int main(){
     scanf("%[^\n]s", s);
     int n = strlen(s);
     for (int i=0; s[i]!='\0'; i++){
-        if (s[i] == '1' || s[i] == '0' || s[0] == '\0'){
+        if (s[i] == '1' || s[i] == '0' || s[i] == '\0'){
             continue;
         }
         else{
