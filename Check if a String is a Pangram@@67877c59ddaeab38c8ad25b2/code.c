@@ -1,9 +1,9 @@
 #include<stdio.h>
-void check(char s){
+void check(char s[]){
     int flag = 1;
     for (int i=0; s[i]!='\0'; i++){
         for (int j=i+1; s[j]!='\0'; j++){
-            if (a[i] == a[j]){
+            if (s[i] == s[j]){
                 flag = 0;
                 break;
             }
