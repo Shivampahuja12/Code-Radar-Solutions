@@ -2,7 +2,7 @@
 void check(char s[]){
     int flag = 1;
     for (int i=0; s[i]!='\0'-1; i++){
-        if ((s[i] == s[i+1]) && s[i]!=' '){
+        if ((s[i] == s[i+1])){
             flag = 0;
             break;
         }
