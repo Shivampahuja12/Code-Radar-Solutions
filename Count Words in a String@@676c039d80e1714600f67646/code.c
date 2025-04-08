@@ -7,7 +7,7 @@ int main(){
     while (s[i]!='\0'){
         i++, count++;
     }
-    int num;
+    int num = 0;
     for (int i=0; i<count; i++){
         if (s[i]==' ') continue;
         else {
@@ -15,7 +15,7 @@ int main(){
             break;
         }
     }
-    int end;
+    int end = 0;
     for (int i=count-1; i>=0; i--){
         if (s[i]==' ') continue;
         else {
