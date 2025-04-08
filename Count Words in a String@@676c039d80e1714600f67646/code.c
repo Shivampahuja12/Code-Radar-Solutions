@@ -2,7 +2,6 @@
 #include<stdio.h>
 int main(){
     char s[100];
-    printf("Enter a string: ");
     scanf("%[^\n]s", s);
     int i=0, count=0;
     while (s[i]!='\0'){
