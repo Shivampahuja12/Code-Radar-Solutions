@@ -29,7 +29,7 @@ int main(){
             cnt++;
         }
     }
-    if (s[0] != ' '){
+    if (s[num] != ' '){
         printf("%d", cnt+1);
     }
     else {
