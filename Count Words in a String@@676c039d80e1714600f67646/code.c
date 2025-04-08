@@ -30,6 +30,6 @@ int main(){
         }
     }
     if (s[num] != ' ') printf("%d", cnt+1);
-    else printf("0");
+    else if (num == 0 || end == 0) printf("0");
     return 0;
 }
