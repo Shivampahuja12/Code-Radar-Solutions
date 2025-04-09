@@ -11,6 +11,7 @@ int main(){
             }
             else {
                 flag = 0;
+                break;
             }
         }
     }
