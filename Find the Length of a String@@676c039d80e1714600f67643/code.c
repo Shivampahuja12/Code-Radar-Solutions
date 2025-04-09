@@ -1,10 +1,10 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    int count = 0;
-    char s[100];
+    int count=0;
+    char s[50];
     scanf("%[^\n]s", s);
     for (int i=0; s[i]!='\0'; i++){
-        count += 1;
+        count++;
     }
     printf("%d", count);
 }
