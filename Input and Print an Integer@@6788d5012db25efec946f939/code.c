@@ -2,5 +2,5 @@
 int main(){
     int n;
     scanf("%d", &n);
-    printf("You entere: %d", n);
+    printf("You entered: %d", n);
 }
